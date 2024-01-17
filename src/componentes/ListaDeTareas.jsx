@@ -18,16 +18,16 @@ const ListaDeTareas = () => {
   return (
     <>
         <TareaFormulario onSubmit={agregarTarea}/>
-        <div className="tarea-lista-contenedor">
+        <div className="tareas-lista-contenedor">
             {
-                tareas.map((tarea)=>{
+                tareas.map((tarea)=>
                     <Tarea
                         key={tarea.id}
                         id={tarea.id}
                         texto={tarea.texto}
                         completada={tarea.completada}
                     />
-                }
+                
                 )
             }
         </div>
